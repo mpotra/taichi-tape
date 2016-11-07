@@ -1,0 +1,41 @@
+{
+  "name": "taichi-tape",
+  "version": "0.1.0",
+  "description": "Tape test runner with Promise testing",
+  "main": "taichi-tape.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint taichi-tape.js",
+    "test": "node test/ | tap-spec",
+    "prepublish": "npm run lint && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpotra/taichi-tape.git"
+  },
+  "author": "Mihai Potra <mike@mpotra.com>",
+  "license": "MIT",
+  "keywords": [
+    "taichi",
+    "test",
+    "harness",
+    "testing",
+    "tape",
+    "promise"
+  ],
+  "bugs": {
+    "url": "https://github.com/mpotra/taichi-tape/issues"
+  },
+  "homepage": "https://github.com/mpotra/taichi-tape#readme",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "dependencies": {
+    "tape": "^4.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.1"
+  }
+}
